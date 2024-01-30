@@ -22,7 +22,7 @@ body {
 section {
     width: 26%;
     background-color: var(--section-bgc);
-    padding: 2.4rem;
+    padding: 2.5rem;
     border-radius: 10px;
 }
 
@@ -50,7 +50,6 @@ section header article h2 {
 
 section header article p {
     font-size: 0.875rem;
-    filter: brightness(88%);
     margin-bottom: 1.6rem;
 }
 
@@ -63,7 +62,7 @@ section main {
 
 section main a {
     width: 100%;
-    height: 2.694rem;
+    height: 2.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
