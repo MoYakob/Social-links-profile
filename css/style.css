@@ -1,0 +1,130 @@
+:root {
+    --main-font-family: 'Inter', sans-serif;
+    --primary-color: hsl(75, 94%, 57%);
+    --main-bgc: hsl(0, 0%, 8%);
+    --section-bgc: hsl(0, 0%, 12%);
+    --button-bgc: hsl(0, 0%, 22%);
+}
+
+* {
+    box-sizing: border-box;
+    color: hsl(0, 0%, 100%);
+    font-family: var(--main-font-family);
+}
+
+body {
+    background-color: var(--main-bgc);
+    display: flex;
+    justify-content: center;
+    padding-block: 10rem;
+}
+
+section {
+    width: 26%;
+    background-color: var(--section-bgc);
+    padding: 2.4rem;
+    border-radius: 10px;
+}
+
+section header {
+    text-align: center;
+}
+
+section header img {
+    width: 85px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+section header article h1 {
+    font-size: 1.45rem;
+    font-weight: 600;
+    margin-block: 1.47rem .6rem;
+    filter: brightness(88%);
+}
+
+section header article h2 {
+    color: var(--primary-color);
+    font-size: 0.8435rem;
+    font-weight: 600;
+    margin-block: 0 1.7rem;
+    filter: brightness(88%);
+    letter-spacing: .1px;
+    word-spacing: -.1px;
+}
+
+section header article p {
+    font-size: 0.8437rem;
+    filter: brightness(75%);
+    letter-spacing: .01px;
+    margin-bottom: 1.6rem;
+}
+
+section main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+section main a {
+    width: 100%;
+    height: 2.694rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--button-bgc);
+    border-radius: 7px;
+    font-size: 0.8435rem;
+    font-weight: 700;
+    filter: brightness(90%);
+}
+
+section main a:is(:hover, :focus) {
+    color: var(--section-bgc);
+    background-color: var(--primary-color);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    body {
+        padding: 6.5rem 1.5rem;
+        margin-inline: 0;
+    }
+
+    section {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    section header img {
+        width: 88px;
+    }
+
+    section header article h1 {
+        font-size: 1.5rem;
+    }
+
+    section header article h2 {
+        font-size: .88rem;
+        letter-spacing: 0;
+        margin-bottom: 1.75rem;
+    }
+
+    section header article p {
+        font-size: .88rem;
+        word-spacing: -.25px;
+        letter-spacing: 0;
+    }
+
+    section main{
+        row-gap: .97rem;
+    }
+
+    section main a {
+        height: 2.85rem;
+        font-size: .88rem;
+        font-weight: 600;
+        letter-spacing: .05px;
+    }
+}
