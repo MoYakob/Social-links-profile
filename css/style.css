@@ -22,7 +22,7 @@ body {
 section {
     width: 26%;
     background-color: var(--section-bgc);
-    padding: 2.5rem;
+    padding: 2.75rem;
     border-radius: 10px;
 }
 
@@ -31,7 +31,7 @@ section header {
 }
 
 section header img {
-    width: 85px;
+    width: 88px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
 }
@@ -87,10 +87,6 @@ section main a:is(:hover, :focus) {
     section {
         width: 100%;
         padding: 1.5rem;
-    }
-
-    section header img {
-        width: 88px;
     }
 
     section header article h1 {
